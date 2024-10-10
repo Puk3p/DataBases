@@ -2,6 +2,7 @@
 
 
 MariaDB [c13_13_db]> SELECT *
+
     -> FROM employees
     -> WHERE last_name LIKE '%a%o%';
 
