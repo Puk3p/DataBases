@@ -1,19 +1,21 @@
 # EXERCITIUL 1
 
-
+```
 MariaDB [c13_13_db]> SELECT *
-
     -> FROM employees
     -> WHERE last_name LIKE '%a%o%';
-
+```
+```
 # EXERCITIUL 2
 
 MariaDB [c13_13_db]> SELECT *
     -> FROM employees
     -> WHERE first_name LIKE '%ll%';
 
+```
 # EXERCITIUL 3
 
+```
 MariaDB [c13_13_db]> SELECT
     -> last_name,
     -> first_name,
@@ -21,8 +23,10 @@ MariaDB [c13_13_db]> SELECT
     -> LENGTH(CONCAT(first_name, ' ', last_name)) AS name_length
     -> FROM employees;
 
+```
 # EXERCITIUL 4
 
+```
 MariaDB [c13_13_db]> SELECT
     -> last_name,
     -> salary,
@@ -34,16 +38,20 @@ MariaDB [c13_13_db]> SELECT
     -> AS tip_salariu
     -> FROM employees;
 
+```
 # EXERCITIUL 5
 
+```
 MariaDB [c13_13_db]> SELECT
     -> MIN(salary) AS salariu_minim,
     -> MAX(salary) AS salariu_maxim,
     -> AVG(salary) AS media_salariala
     -> FROM employees;
 
+```
 # EXERCITIUL 6
 
+```
 MariaDB [c13_13_db]> SELECT
     -> last_name,
     -> salary,
@@ -52,9 +60,11 @@ MariaDB [c13_13_db]> SELECT
     -> FROM employees
     -> WHERE manager_id IS NOT NULL;
 
+```
 
 # EXTRA - EXERCITII
-1)
+
+```
   MariaDB [c13_13_db]> SELECT 
       -> d.department_name,
       -> l.city
@@ -66,6 +76,9 @@ MariaDB [c13_13_db]> SELECT
       -> AND SUBSTRING(l.city, 3, 1) = 'u'
       -> AND SUBSTRING(l.city, 5, 1) = 'h';
 
+```
+
+```
 MariaDB [(none)]> SELECT
     -> first_name,
     -> last_name,
@@ -73,3 +86,4 @@ MariaDB [(none)]> SELECT
     -> FROM
     -> employees;
 
+```
