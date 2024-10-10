@@ -5,9 +5,10 @@ MariaDB [c13_13_db]> SELECT *
     -> FROM employees
     -> WHERE last_name LIKE '%a%o%';
 ```
-```
+
 # EXERCITIUL 2
 
+```
 MariaDB [c13_13_db]> SELECT *
     -> FROM employees
     -> WHERE first_name LIKE '%ll%';
