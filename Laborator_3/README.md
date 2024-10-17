@@ -37,6 +37,7 @@ MariaDB [c13_13_db]> CREATE TABLE users1 (
     -> name VARCHAR(20) NOT NULL,
     -> email VARCHAR(30) NOT NULL ) ENGINE=InnoDB;
 ```
+```
 MariaDB [c13_13_db]> CREATE TABLE details1(
     -> ID INT PRIMARY KEY,
     -> nickname VARCHAR(10) NOT NULL UNIQUE,
